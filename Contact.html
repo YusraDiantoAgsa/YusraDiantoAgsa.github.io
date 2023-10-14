@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Forum 5</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th><a href="Forum 2.html"><h2>HOME</h2></a></th>
+                <th><a href="Gallery.html"><h2>GALLERY</h2></a></th>
+                <th><a href="AboutMe.html"><h2>ABOUT ME</h2></a></th>
+                <th><a href="Contact.html"><h2>CONTACT</h2></a></th>
+            </tr>   
+        </table>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" id="data_nama" placeholder="Masukkan Nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" id="data_Gmail" placeholder="Masukkan Gmail"></td>
+            </tr>
+            <tr>
+                <td>Deskripsi</td>
+                <td>:</td>
+                <td><input type="text" id="data_deskripsi" placeholder="Masukkan Deskripsi"></td>
+            </tr>
+        </table>
+        <button onclick="HasilData()">Kirim</button>
+
+        <script type="text/javascript">
+            function HasilData(){
+                var Nama  = document.getElementById('data_nama').value
+                var gmail  = document.getElementById('data_Gmail').value
+                var Description  = document.getElementById("data_deskripsi").value
+    
+                alert("Nama : "+ Nama + "\nGmail : "+ gmail + "Deskripsi : " + Description )
+            }
+        </script>
+</body>
+</html>
